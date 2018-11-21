@@ -6,7 +6,7 @@ input.addEventListener("click", function (event) {
     clearImageResults();
 
     //fetching the api
-    const host = "http://api.giphy.com/v1";
+    const host = "https://api.giphy.com/v1";
     const query = `${search.value}`
     const apiKey = 'OBqiOinMGeKhOD3LT6y8Odp6DZC4jOjc'
     const newAPI = `${host}/gifs/search?q=${query}&api_key=${apiKey}&limit=3`;
