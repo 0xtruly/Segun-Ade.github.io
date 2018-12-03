@@ -1,0 +1,18 @@
+.container{
+    margin: 120px auto;
+    width: 900px;
+    #imageResult{
+        display: flex;
+        flex-wrap: wrap;
+        width: 900px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        
+    }
+    #imageResult img{
+        width:250px;
+        height: 250px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
