@@ -14,16 +14,33 @@ body {
 }
 
 .btn-xl {
-    padding: 1.25rem 2.5rem
+    padding: .625rem 1.25rem
+}
+@media (min-width:992px){
+    .btn-xl{
+        padding: 1.25rem 2.5rem;
+    }
 }
 
 .content-section {
-    padding-top: 5rem;
-    padding-bottom: 5rem
+    padding-top: 2rem;
+    padding-bottom: 2rem
 }
 
 .content-section-heading h2 {
-    font-size: 3rem
+    font-size: 2rem;
+}
+@media (min-width:992px){
+    .content-section-heading h2{
+        font-size: 3rem;
+    }
+    .h2, h2 {
+        font-size: 3rem;
+    }
+    .content-section {
+        padding-top: 5rem;
+        padding-bottom: 5rem
+    }
 }
 
 .content-section-heading h3 {
@@ -82,10 +99,10 @@ h1, h2, h3, h4, h5, h6 {
     display: table;
     width: 100%;
     height: auto;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, .5))), url(../img/bg-head.jpg);
-    background: linear-gradient(315deg, rgba(224, 26, 231, 0.431) 0, rgba(46, 44, 45, 0.555) 100%), url(../img/bg-head.jpg);
+    background: linear-gradient(200deg, hsla(125, 55%, 75%, 0.808) 0, hsla(215, 50%, 50%, 0.363) 100%), url(../img/bg-head.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover
@@ -200,27 +217,46 @@ h1, h2, h3, h4, h5, h6 {
     background: #343a40
 }
 .callout {
-    padding: 10rem 0;
+    padding: 3rem 0;
     background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, .5))), url(../img/bg-callout.jpg);
     background: linear-gradient(40deg, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 100%), url(../img/bg-callout.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover
 }
+@media (min-width:992px){
+    .callout{
+        padding: 10rem 0;
+    }
+}
 
 .callout h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     display: block;
-    max-width: 30rem
+    max-width: 20rem
+}
+@media (min-width){
+    .callout h2{
+        font-size: 3rem;
+        max-width: 30rem
+    }
 }
 .contact-form{
-    margin-top: 20px;
-    margin-bottom: 30px;
-    padding: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 35px 10px 35px;
     border: none;
     width: 100%;
-    height: 580px;
+    height: 600px;
+}
+@media (min-width:992px){
+    .contact-form{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0 5pxpx;
+        height: 615px;
+    }
 }
 .portfolio-item {
     display: block;
@@ -292,16 +328,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 footer.footer {
-    padding-top: 5rem;
-    padding-bottom: 5rem
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 footer.footer .social-link {
     display: block;
-    height: 4rem;
-    width: 4rem;
-    line-height: 4.3rem;
-    font-size: 1.5rem;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2.3rem;
+    font-size: 1rem;
     background-color: #579bc2;
     -webkit-transition: background-color .15s ease-in-out;
     transition: background-color .15s ease-in-out;
@@ -312,6 +348,18 @@ footer.footer .social-link {
 footer.footer .social-link:hover {
     background-color: #33c08a;
     text-decoration: none
+}
+@media (min-width:992px){
+    footer.footer .social-link{
+        height: 4rem;
+        width: 4rem;
+        line-height: 4.3rem;
+        font-size: 1.5rem;
+    }
+    footer.footer{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
 }
 
 a {
